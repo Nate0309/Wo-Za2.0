@@ -45,6 +45,26 @@ nav .hamburger {
     color: #E63946;
 }
 
+
+.description{
+    background-color: #03F7EB;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.description p{
+    font-size: 30px;
+    margin: 0;
+    flex: 1; /* Allows the paragraph to take available space */
+    justify-content: center;
+    align-items: center; /* Centers text vertically */
+    color: blueviolet;
+}
+
 .requirements {
     background-color: #ffff;
     color: blueviolet;
@@ -53,7 +73,8 @@ nav .hamburger {
     gap: 20px; /* Adds spacing between heading and images */
     align-items: center; /* Aligns items to the center */
     justify-content: center; /* Centers content horizontally */
-    border-radius: 10px;;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .requirements ul {
@@ -89,4 +110,54 @@ nav .hamburger {
     font-size: 100px; /* Makes text 1.5 times the root size */
     text-align: left; /* Centers the text */
     margin-top: 20px; /* Adds space above the text */
+}
+
+
+.pricing{
+    background-color: #E63946;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+#pricing-label {
+    font-size: 4rem; /* Makes text 1.5 times the root size */
+    margin-top: 20px; /* Adds space above the text */
+    font-weight: bold;
+}
+
+.pricing ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for two cards side by side */
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing li {
+    background: #76BED0;
+    color: blueviolet;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    padding: 40px 20px;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pricing li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.20);
+}
+
+#deposit {
+    font-size: 4rem;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
 }

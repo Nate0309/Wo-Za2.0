@@ -1,6 +1,8 @@
 body{
     background-color: blueviolet;
     color: white;
+    box-shadow: #FFE8D4 0px 0px 40px;
+    padding: 20px;
 }
 
 .header {
@@ -13,6 +15,34 @@ body{
 .header h1{
     font-size: 200px;
     margin-right: 100px;
+}
+
+nav {
+    background-color: #FFE8D4;
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid blueviolet;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+nav .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0;
+    margin-left: 20px;
+    padding-top: 10px;   /* Space from the top */
+    color: #E63946;
 }
 
 .requirements {
@@ -53,4 +83,10 @@ body{
     max-width: 100%;   /* Prevent overflow */
     height: auto;      /* Maintain aspect ratio */
     margin-top: 20px;  /* Adjust vertical position as needed */
+}
+
+#motorcycle-rental {
+    font-size: 100px; /* Makes text 1.5 times the root size */
+    text-align: left; /* Centers the text */
+    margin-top: 20px; /* Adds space above the text */
 }

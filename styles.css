@@ -37,6 +37,6 @@ body{
 
 .requirements .drivers {
     object-fit: contain; /* Ensures the image fits within its container */
-    max-height: 150px; /* Adjust height for landscape images */
+    max-width: 200px;
     margin-top: 100px; /* Moves the image down */
 }
